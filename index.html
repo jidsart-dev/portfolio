@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Alberto - Porfolio & Blog Website</title>
+  <meta name="title" content="Alberto - Portfolio & Blog Website">
+  <meta name="description" content="This is my Portfolio & Blog Website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <div id="header-placeholder"></div>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero pt-10" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Hello Everyone!</p>
+
+            <h1 class="headline headline-1 section-title">
+              I’m <span class="span myname" id="typewriter">JIDS</span><span class="cursor">|</span>
+            </h1>
+
+            <p class="hero-text">
+              A passionate graphic designer turning ideas into powerful visuals. I craft logos, layouts, and content that connect brands with their audience—clever, clean, and creative.
+            </p>
+            
+            <button class="btn btn-primary">
+                <span class="span" id="services">Download CV</span>
+
+                <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.png" width="327" height="490" alt="Hero Image" class="w-100">
+
+            <img src="./assets/images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
+            <img src="./assets/images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
+
+          </div>
+
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOPICS
+      -->
+
+      <section class="topics" id="services1" aria-labelledby="topic-label">
+        <div class="container">
+
+          <div class="card topic-card">
+
+            <div class="card-content">
+
+              <h2 class="headline headline2 section-title card-title" id="topic-label">
+                My Services
+              </h2>
+
+              <p class="card-text">
+                From branding and social media graphics to UI/UX and web design, I offer creative solutions that elevate your brand, engage your audience, and drive results.
+              </p>
+
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="btn-icon" aria-label="next" data-slider-next id="aboutme">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="slider border-radius-16" data-slider>
+              <ul class="slider-list" data-slider-container>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder " style="--width: 507; --height: 618;">
+                      <img src="./assets/images/topic-1.png" width="507" height="618" loading="lazy" alt="Sport"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Branding & Identity Design</span>
+
+                      <p class="slider-subtitle mr-1"></p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/topic-2.png" width="507" height="618" loading="lazy" alt="Travel"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Social Media Creatives</span>
+
+                      <p class="slider-subtitle"></p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/topic-3.png" width="507" height="618" loading="lazy" alt="Design"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Marketing & Advertising Materials</span>
+
+                      <p class="slider-subtitle"></p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/portfolio/Website-Designs/website-design-01.jpg" width="507" height="618" loading="lazy" alt="Movie"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">UI/UX & Website Design</span>
+
+                      <p class="slider-subtitle"></p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/topic-5.png" width="507" height="618" loading="lazy" alt="Lifestyle"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Motion Graphics & Video Editing</span>
+
+                      <p class="slider-subtitle"></p>
+                    </div>
+
+                  </a>
+                </li>
+                
+        
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+       <!-- 
+        - #ABOUT ME
+      -->
+
+      
+      <section class="hero pt-10" id="1" aria-label="home">
+        <div class="container card p-1 border-radius-16">
+                  
+          <figure class="hero-banner mb-0">
+
+            <img src="./assets/images/hero-banner2.png" width="835" height="960" alt="hero banner" class="w-100"
+              data-parallax data-parallax-speed="5" data-tooltip="I'm Jids">
+
+            <img src="./assets/images/tools-icon-ae.png" width="150" height="150" alt="After Effects" class="shape-icon shape-icon-1"
+              data-parallax data-parallax-speed="10" data-tooltip="After Effects" data-bar-color="#AE3EC9"
+               data-percent="50"
+               data-sound="./assets/sounds/character-reveal.wav">
+              
+            <img src="./assets/images/tools-icon-pr.png" width="150" height="150" alt="Premier Pro" class="shape-icon shape-icon-2"
+              data-parallax data-parallax-speed="15" data-tooltip="Premier Pro" data-bar-color="#6C63FF"
+               data-percent="75"
+               data-sound="./assets/sounds/character-reveal.wav">         
+              
+            <img src="./assets/images/tools-icon-id.png" width="150" height="150" alt="Indesign" class="shape-icon shape-icon-3"
+              data-parallax data-parallax-speed="20" data-tooltip="Indesign" data-bar-color="#D63384"
+               data-percent="85"
+               data-sound="./assets/sounds/character-reveal.wav">                  
+
+            <img src="./assets/images/tools-icon-ai.png" width="120" height="120" alt="Illustrator" class="shape-icon shape-icon-4"
+              data-parallax data-parallax-speed="25" data-tooltip="Illustrator" data-bar-color="#ff9a00"
+               data-percent="90"
+               data-sound="./assets/sounds/character-reveal.wav">
+
+            <img src="./assets/images/tools-icon-ps.png" width="150" height="150" alt="Photoshop" class="shape-icon shape-icon-5"
+              data-parallax data-parallax-speed="40" data-tooltip="Photoshop" data-bar-color="#36adfd"
+               data-percent="90"
+               data-sound="./assets/sounds/character-reveal.wav">
+
+          
+          </figure>                    
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle"></p>
+
+            <h1 class="headline headline-1 section-title">
+              <span class="span">About Me</span>
+            </h1>
+
+             <p class="hero-text">I’m Alberto Hipitulan III, the creative mind behind JIDS ART. With over a decade of hands-on experience in graphic design and a background in UX/UI, I help brands bring their stories to life through bold, thoughtful design. <br><br>
+
+              Design isn’t just my job—it’s my passion. Whether it’s a striking logo, an eye-catching social media post, or a full brand identity, I aim to blend creativity with clarity. My design style is clean, clever, and always built with purpose.<br><br>
+
+              I'm also the founder of DotCreate, a creative and IT company specializing in helping startups and businesses level up with strategic visuals, websites, digital and business solutions.<br><br>
+
+              When I’m not designing, you’ll find me exploring ideas, learning new design trends, or spending time with my family. My work is a reflection of who I am: passionate, driven, and committed to quality.<br><br>
+
+              Let’s create something awesome together.
+             </p>
+            
+             <a href="contact.html" class="btn btn-primary">Contact Me</a>
+
+            
+
+          </div>
+
+
+
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>   
+      
+         
+
+      <!-- 
+        - #FEATURED POST
+      -->
+
+      <section class="section feature" aria-label="feature" id="featured">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title text-center">
+            <span class="span">Featured Projects</span>
+          </h2>
+
+          <p class="section-text">
+            A showcase of my favorite design work—where creativity meets purpose. From bold brand identities to polished digital layouts, each project reflects my passion for clean, clever, and effective design.
+          </p>
+
+          <ul class="feature-list">
+
+            <li>
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Casino/cosmoplay-logo-3d.png" width="1602" height="903" loading="lazy"
+                    alt="cosmoplay logo" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Logo</a>
+
+                      <a href="#" class="span hover-2">#Design</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      CosmoPlay - Logo Design
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="image-box" data-name="landing page" data-tags="green landing page design website design plant desktop ui/ux ui ux">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Website-Designs/website-design-01.jpg" width="1602" height="903" loading="lazy"
+                    alt="Website Design" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#LandingPage</a>
+
+                      <a href="#" class="span hover-2"></a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Website Design
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Food-&-Beverage/11x17%20Vertical%20Poster%20-%20Mangonada.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Poster</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Mangonada
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Flyers/Dante%20Leon%20Seminar%20-%20Flyer%20-%208x11.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Posters</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Poster Design
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+            <li>
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Casino/PanaloPrime-logo.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Social Media</a>
+
+                      <a href="#" class="span hover-2">#Sizes</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Panalo Prime - Logo Design
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+           
+            
+            
+
+          </ul>
+
+          <a href="portfolio.html" class="btn btn-secondary">
+            <span class="span">Show More</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+
+        <img src="./assets/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
+
+      </section>
+      
+      
+
+      <!-- 
+        - #BLOGS
+      -->
+
+      <section class="section recent-post" id="blogs" aria-labelledby="recent-label">
+        <div class="container">
+
+          <div class="post-main">
+
+            <h2 class="headline headline-2 section-title">
+              <span class="span">Blogs</span>
+            </h2>
+
+            <p class="section-text">
+              Welcome to my blog — where I pretend to have it all together while juggling deadlines, picky clients, and 47 open Photoshop tabs. Expect design tips, logo wisdom, and occasional existential dread masked as “creative process.” It’s like therapy, but with more layers (literally). Read at your own risk. Fonts may be judged.
+            </p>
+
+            <ul class="grid-list">
+
+              <li>
+               <a href="./blogs.html" class="">
+                 <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/blog-images/social-media-size-guide.jpg" width="271" height="258" loading="lazy"
+                      alt="Know the exact pixel sizes for Facebook, Instagram, LinkedIn, X (Twitter), and more — updated for 2025. Perfect for fast, optimized designs." class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Design Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Ultimate Social Media Sizes Guide for Designers (<script>
+                    document.write(new Date().getFullYear() + "");
+                  </script>) </a>
+                    </h3>
+
+                    <p class="card-text">
+                      Know the exact pixel sizes for Facebook, Instagram, LinkedIn, X (Twitter), and more — updated for 
+                      <script>document.write(new Date().getFullYear() + "");</script>. Perfect for fast, optimized designs.
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#SocialMediaSizes</a>
+                        <a href="#" class="span hover-2">#Design2025</a>
+                        
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>  
+               </a>
+                
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/blog-images/7-types-of-logo.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a class="card-badge">Logo Design Guide</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">7 Types of Logos Every Designer Must Know</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Not all logos are created equal. Learn the 7 essential logo types every designer should master—and when to use each one effectively.
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#LogoDesign</a>
+
+                        <a href="#" class="span hover-2">#BrandingBasics</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-3.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a class="card-badge">Design Principles</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Golden Rules Of Graphic Design</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Break the rules after you learn them. Discover the golden principles every designer should swear by before getting experimental.
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#GraphicDesign</a>
+
+                        <a href="#" class="span hover-2">#DesignRules</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-4.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a class="card-badge">Graphic Design 101</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Tools of the Trade</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Basics</a>
+
+                        <a href="#" class="span hover-2"># Design</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="./assets/images/recent-post-5.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">A Beginner’s Guide to Visual Communication</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <nav aria-label="pagination" class="pagination">
+
+              <a href="#" class="pagination-btn" aria-label="previous page">
+                <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+              </a>
+
+              <a href="#" class="pagination-btn">1</a>
+              <a href="#" class="pagination-btn">2</a>
+              <a href="#" class="pagination-btn">3</a>
+              <a href="#" class="pagination-btn" aria-label="more page">...</a>
+
+              <a href="#" class="pagination-btn" aria-label="next page">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+
+            </nav>
+
+          </div>
+
+          <div class="post-aside grid-list">
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Popular Posts</span>
+              </h3>
+
+              <ul class="popular-list">
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-1.jpg" width="64" height="64" loading="lazy"
+                        alt="Creating is a privilege but it’s also a gift" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Creating is a privilege but it’s also a gift</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-2.jpg" width="64" height="64" loading="lazy"
+                        alt="Being unique is better than being perfect" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Being unique is better than being perfect</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-3.jpg" width="64" height="64" loading="lazy"
+                        alt="Every day, in every city and town across the country" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Every day, in every city and town across the country</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-4.jpg" width="64" height="64" loading="lazy"
+                        alt="Your voice, your mind, your story, your vision" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Your voice, your mind, your story, your vision</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="./assets/images/popular-post-2.jpg" width="64" height="64" loading="lazy"
+                        alt="Being unique is better than being perfect" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Being unique is better than being perfect</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Client Testimonials</span>
+              </h3>
+
+              <ul class="comment-list">
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ Working with Alberto was a game-changer for our brand. His designs were modern, clean, and exactly what we envisioned — sometimes even better. Fast turnaround, professional communication, and tons of creative ideas. Highly recommended! “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="./assets/images/author-6.png" width="32" height="32" loading="lazy" alt="Jane Cooper">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Germain Jamaji Owner of Playverse Management</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2024</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ We've worked with a lot of designers, but Alberto stands out. He’s fast, flexible, and his attention to detail is superb. We especially appreciated the unlimited revisions offer—it gave us peace of mind during development. “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="./assets/images/author-7.png" width="32" height="32" loading="lazy" alt="Katen Doe">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Brix Agcopra, Owner of SPVTOP</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2023</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ His work speaks for itself. From logo design to full brand identity, Alberto helped elevate our online presence. Plus, he’s super easy to work with and always delivers on time. “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="./assets/images/author-8.png" width="32" height="32" loading="lazy"
+                          alt="Barbara Cartland">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Mary Joy V., Owner of Baked with Joy</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+            
+                                                                                                           
+            <div class="card aside-card card aside-card insta-card">
+
+              <a href="https://www.instagram.com/jidsart" class="logo" target="_blank">
+                <img src="./assets/images/logo.svg" width="119" height="37" loading="lazy" alt="jidsart logo">
+              </a>
+
+              <p class="card-text">
+                Follow me on instagram
+              </p>
+
+              <ul class="insta-list">
+
+                <li>
+                  <a href="" class="insta-post img-holder" style="--width: 276; --height: 277;" target="_blank">
+                    <img src="https://scontent-sin6-3.cdninstagram.com/v/t39.30808-6/486535577_1126676719472010_7090321086334235139_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQuaW1hZ2VfdXJsZ2VuLjEwODB4MTM1MC5zZHIuZjMwODA4LmRlZmF1bHRfaW1hZ2UifQ&_nc_ht=scontent-sin6-3.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2QHAKAEJ7E9y7OWXnbbGfR8KXy18Pp2-aUes1ll4-e69pSejErVDtVWpvkKYk4Rajlw&_nc_ohc=tq2nMRaTesAQ7kNvwEZqBEh&_nc_gid=L0FiGjg8etWu0Xf6bKFXKQ&edm=AP4sbd4AAAAA&ccb=7-5&ig_cache_key=MzE5ODg1NDYxMzQ5MTYwODk3Ng%3D%3D.3-ccb7-5&oh=00_AfPHRxI62dXqBM6QJG7RJom34NNAh2WQYCFkLXt18sErEQ&oe=6846E9D8&_nc_sid=7a9f4b" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+ 
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/jidsart" class="insta-post img-holder" style="--width: 276; --height: 277;" target="_blank">
+                    <img src="./assets/images/7-types-of-logo.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/jidsart" class="insta-post img-holder" style="--width: 276; --height: 277;" target="_blank">
+                    <img src="./assets/images/insta-post/social-media-size-guide.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/jidsart" class="insta-post img-holder" style="--width: 276; --height: 277;" target="_blank">
+                    <img src="./assets/images/insta-post/unlock-the-secrets.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/jidsart" class="insta-post img-holder" style="--width: 276; --height: 277;" target="_blank">
+                    <img src="./assets/images/insta-post/01.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/jidsart" class="insta-post img-holder" style="--width: 276; --height: 277;" target="_blank">
+                    <img src="./assets/images//insta-post/282025817_401346582005031_5856502581475279724_n.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/jidsart" class="insta-post img-holder" style="--width: 276; --height: 277;" target="_blank">
+                    <img src="./assets/images/insta-post/habal.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/jidsart" class="insta-post img-holder" style="--width: 276; --height: 277;" target="_blank">
+                    <img src="./assets/images/insta-post/reel%20cover%20-%20happy%20basket.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="https://www.instagram.com/jidsart" class="insta-post img-holder" style="--width: 276; --height: 277;" target="_blank">
+                    <img src="./assets/images/insta-post/martin%20leblanc.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+<div id="footer-placeholder"></div>
+
+
+<script>
+  const parallaxElements = document.querySelectorAll("[data-parallax]");
+
+  window.addEventListener("mousemove", event => {
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+
+    const offsetX = event.clientX - centerX;
+    const offsetY = event.clientY - centerY;
+
+    parallaxElements.forEach(el => {
+      const speed = Number(el.dataset.parallaxSpeed) || 10;
+
+      const movementX = (offsetX / centerX) * speed;
+      const movementY = (offsetY / centerY) * speed;
+
+      el.animate(
+        {
+          transform: `translate(${movementX}px, ${movementY}px)`
+        },
+        {
+          duration: 500,
+          fill: "forwards"
+        }
+      );
+    });
+  });
+</script>
+
+
+  <!-- 
+    - #myname
+  -->
+
+<script> 
+  document.addEventListener("DOMContentLoaded", function () {
+    const element = document.getElementById("typewriter");
+    const names = ["JIDS", "Alberto"];
+    let currentIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentName = names[currentIndex];
+      const displayedText = currentName.substring(0, charIndex);
+
+      element.textContent = displayedText;
+
+      if (!isDeleting && charIndex < currentName.length) {
+        charIndex++;
+        setTimeout(type, 150);
+      } else if (isDeleting && charIndex > 0) {
+        charIndex--;
+        setTimeout(type, 100);
+      } else {
+        isDeleting = !isDeleting;
+        if (!isDeleting) {
+          currentIndex = (currentIndex + 1) % names.length;
+        }
+        setTimeout(type, 1000);
+      }
+    }
+
+    type();
+  });
+</script>
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src=".//assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <script src="./assets/js/main.js" defer></script>
+  <script src="./assets/js/tilteffect.js" defer></script>
+  <script src="./assets/js/tooltipanim.js" defer></script>
+
+
+
+
+
+
+</body>
+
+</html>

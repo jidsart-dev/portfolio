@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Alberto - Blogs</title>
+  <meta name="title" content="Alberto - Blogs">
+  <meta name="description" content="This is my Portfolio & Blog Website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <div id="header-placeholder"></div>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero mb-4" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+
+            <h1 class="headline headline-1 section-title text-white">
+              <span class="span">Got a Creative Project? Let’s Make It Awesome!</span>
+            </h1>
+
+            
+            
+
+          </div>
+
+        <section class="topics" id="topics" aria-labelledby="topic-label">
+
+          
+          <form class="card p-2 border-radius-16 contact-form" id="contactForm">
+            <!-- Email Field -->
+            <div class="form-group">
+              <label>
+                <ion-icon class="icon" name="mail" aria-hidden="true"></ion-icon>
+                <input type="email" name="email" placeholder="Email" required autofocus/>
+              </label>
+            </div>
+            
+            <!-- name Field -->
+            <div class="form-group">
+              <label>
+                <ion-icon class="icon" name="person-circle" aria-hidden="true"></ion-icon>
+                <input type="text" name="name" placeholder="name" required/>
+              </label>
+            </div>
+
+            <!-- Message Field -->
+            <div class="form-group">
+              <label>
+                <ion-icon class="icon" name="chatbox-ellipses" aria-hidden="true"></ion-icon>
+                <textarea name="message" rows="4" placeholder="Message" required></textarea>
+              </label>
+            </div>
+
+            <!-- Send Button -->
+            <div class="button-container">
+              <button class="btn btn-primary" type="submit">
+                  <span class="span">Send</span>
+                  <ion-icon name="send" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+          </form>
+          
+          
+          <!-- Success Popup -->
+          <div id="successPopup" class="success-popup hidden">
+            <p>✅ Message sent successfully!</p>
+          </div>
+        </section>
+
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>
+      
+      <section class="section2 feature" aria-label="feature" id="featured">
+
+
+      </section>
+      
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <div id="footer-placeholder"></div>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/main.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+  const contactForm = document.getElementById("contactForm");
+  const popup = document.getElementById("successPopup");
+
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    // Optional: validate manually if needed
+
+    // Simulate form submission logic
+    setTimeout(() => {
+      popup.classList.remove("hidden");
+      popup.classList.add("show");
+
+      contactForm.reset(); // clear form fields
+
+      // Hide after 3 seconds
+      setTimeout(() => {
+        popup.classList.remove("show");
+        popup.classList.add("hidden");
+      }, 3000);
+    }, 500); // delay to simulate sending
+  });
+</script>
+
+
+
+</body>
+
+</html>
