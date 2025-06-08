@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR_NAME - Portfolio</title>
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="https://via.placeholder.com/32" type="image/x-icon">
+
+    <!-- Tailwind CSS CDN - For quick setup, replace with your local build process in production -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts (Optional: for a custom font) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles if needed, but aim for pure Tailwind */
+        body {
+            font-family: 'Poppins', sans-serif;
+            @apply text-gray-800 bg-gray-50;
+        }
+        /* Style for active navigation link (optional, typically handled by JS) */
+        .nav-link.active {
+            @apply text-blue-600 font-semibold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="bg-white/90 backdrop-blur-sm fixed w-full z-10 shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-gray-900 hover:text-blue-600 transition duration-300">
+                YOUR_NAME
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-700 hover:text-blue-600 transition duration-300 nav-link">About</a>
+                <a href="#skills" class="text-gray-700 hover:text-blue-600 transition duration-300 nav-link">Skills</a>
+                <a href="#projects" class="text-gray-700 hover:text-blue-600 transition duration-300 nav-link">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 transition duration-300 nav-link">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (Hamburger) - Optional, requires JS to toggle -->
+            <button class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by default, show with JS) -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#skills" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Skills</a>
+            <a href="#projects" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Projects</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative bg-gradient-to-r from-blue-500 to-purple-600 text-white min-h-screen flex items-center justify-center text-center p-6">
+        <div class="max-w-4xl mx-auto">
+            <img src="https://via.placeholder.com/150" alt="YOUR_NAME Profile Picture" class="rounded-full w-40 h-40 mx-auto mb-8 shadow-lg object-cover border-4 border-white">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
+                Hi, I'm <span class="text-yellow-300">YOUR_NAME</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 animate-fade-in-up delay-200">
+                A <span class="font-semibold">[Your Main Role/Specialty]</span> passionate about <span class="font-semibold">[Your Passion]</span>.
+            </p>
+            <a href="#projects" class="inline-block bg-white text-blue-600 font-semibold px-8 py-4 rounded-full text-lg shadow-lg hover:bg-gray-100 hover:scale-105 transition duration-300 animate-fade-in-up delay-400">
+                View My Work
+            </a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">About Me</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                Hello! I'm YOUR_NAME, a passionate [Your Role, e.g., Full-Stack Developer, UX Designer, Content Creator] with X years of experience in [Your field]. I love building innovative solutions that solve real-world problems and create engaging user experiences.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                My journey in [Your Field] began when [brief story or motivation]. I'm constantly learning and exploring new technologies to deliver high-quality, impactful work. In my free time, I enjoy [Your Hobby/Interest]. Let's connect and build something amazing together!
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">My Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Skill Item -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="HTML5" class="h-16 w-16 mx-auto mb-4 object-contain">
+                    <p class="text-lg font-semibold text-gray-800">HTML5</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/512px-CSS3_logo_and_wordmark.svg.png" alt="CSS3" class="h-16 w-16 mx-auto mb-4 object-contain">
+                    <p class="text-lg font-semibold text-gray-800">CSS3</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png" alt="JavaScript" class="h-16 w-16 mx-auto mb-4 object-contain">
+                    <p class="text-lg font-semibold text-gray-800">JavaScript</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/512px-Vue.js_Logo_2.svg.png" alt="Vue.js" class="h-16 w-16 mx-auto mb-4 object-contain">
+                    <p class="text-lg font-semibold text-gray-800">Vue.js</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS" class="h-16 w-16 mx-auto mb-4 object-contain">
+                    <p class="text-lg font-semibold text-gray-800">Tailwind CSS</p>
+                </div>
+                <!-- Skill Item -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Laravel_Nova_Logo.svg/512px-Laravel_Nova_Logo.svg.png" alt="Laravel" class="h-16 w-16 mx-auto mb-4 object-contain">
+                    <p class="text-lg font-semibold text-gray-800">Laravel</p>
+                </div>
+                <!-- Add more skills as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                    <img class="w-full h-48 object-cover" src="https://via.placeholder.com/600x400/FF5733/FFFFFF?text=Project+One" alt="Project One">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">E-commerce Platform</h3>
+                        <p class="text-gray-700 mb-4 flex-grow">A full-stack e-commerce solution with user authentication, product management, and a secure checkout process.</p>
+                        <div class="flex flex-wrap justify-center gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Vue.js</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Laravel</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex justify-center space-x-4">
+                        <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold transition duration-300">Live Demo</a>
+                        <a href="#" target="_blank" class="text-gray-600 hover:text-gray-800 font-semibold transition duration-300">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                    <img class="w-full h-48 object-cover" src="https://via.placeholder.com/600x400/33C7FF/FFFFFF?text=Project+Two" alt="Project Two">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Portfolio Website Builder</h3>
+                        <p class="text-gray-700 mb-4 flex-grow">An online tool allowing users to easily create and customize their personal portfolio websites with drag-and-drop features.</p>
+                        <div class="flex flex-wrap justify-center gap-2 mb-4">
+                            <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">React</span>
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Node.js</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex justify-center space-x-4">
+                        <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold transition duration-300">Live Demo</a>
+                        <a href="#" target="_blank" class="text-gray-600 hover:text-gray-800 font-semibold transition duration-300">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                    <img class="w-full h-48 object-cover" src="https://via.placeholder.com/600x400/33FF99/FFFFFF?text=Project+Three" alt="Project Three">
+                    <div class="p-6 flex-grow">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Mobile Expense Tracker</h3>
+                        <p class="text-gray-700 mb-4 flex-grow">A cross-platform mobile application for tracking daily expenses, categorizing transactions, and visualizing spending habits.</p>
+                        <div class="flex flex-wrap justify-center gap-2 mb-4">
+                            <span class="bg-cyan-100 text-cyan-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">React Native</span>
+                            <span class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0 flex justify-center space-x-4">
+                        <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold transition duration-300">Live Demo</a>
+                        <a href="#" target="_blank" class="text-gray-600 hover:text-gray-800 font-semibold transition duration-300">GitHub Repo</a>
+                    </div>
+                </div>
+
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4 text-center max-w-2xl">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                Have a project in mind, a question, or just want to say hi? Feel free to reach out! I'm always open to new opportunities and collaborations.
+            </p>
+            <div class="flex flex-col items-center space-y-4">
+                <a href="mailto:your.email@example.com" class="inline-block bg-blue-600 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-md hover:bg-blue-700 hover:scale-105 transition duration-300">
+                    Email Me: your.email@example.com
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="inline-block text-blue-600 border border-blue-600 font-semibold px-8 py-4 rounded-full text-lg hover:bg-blue-50 hover:text-blue-700 transition duration-300">
+                    Connect on LinkedIn
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="inline-block text-gray-700 border border-gray-700 font-semibold px-8 py-4 rounded-full text-lg hover:bg-gray-100 hover:text-gray-900 transition duration-300">
+                    Follow on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© <span id="current-year"></span> YOUR_NAME. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://twitter.com/yourusername" target="_blank" class="text-gray-400 hover:text-blue-400 transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.007-.532A8.318 8.318 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012 10.707v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.188 11.644 11.644 0 008.29 20.251z"></path></svg>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="text-gray-400 hover:text-gray-200 transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.47.087.531-.207.531-.462 0-.229-.007-.849-.011-1.671-2.776.62-3.364-1.378-3.364-1.378-.455-1.152-1.11-1.458-1.11-1.458-.908-.617.069-.606.069-.606 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.087 2.91.829.091-.645.356-1.087.649-1.334-2.22-.253-4.555-1.113-4.555-4.953 0-1.096.391-1.993 1.024-2.694-.103-.253-.446-1.272.097-2.65 0 0 .839-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.701.115 2.503.385 1.909-1.296 2.747-1.026 2.747-1.026.546 1.379.202 2.398.097 2.65-.633.701-1.024 1.598-1.024 2.694 0 3.841 2.339 4.69 4.566 4.943.359.309.678.92.678 1.855 0 1.335-.012 2.41-.012 2.72 0 .254.059.545.535.457C21.149 20.121 24 16.368 24 12.017 24 6.484 19.522 2 14 2h-2z" clip-rule="evenodd"></path></svg>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Optional: Smooth scroll for mobile menu links (if you implement a JS mobile menu)
+        // const navLinks = document.querySelectorAll('.nav-link');
+        // navLinks.forEach(link => {
+        //     link.addEventListener('click', (e) => {
+        //         e.preventDefault();
+        //         const targetId = link.getAttribute('href');
+        //         document.querySelector(targetId).scrollIntoView({
+        //             behavior: 'smooth'
+        //         });
+        //         // Close mobile menu after clicking a link (if implemented)
+        //         // document.getElementById('mobile-menu').classList.add('hidden');
+        //     });
+        // });
+
+        // Basic mobile menu toggle (requires the hamburger button to be uncommented)
+        const mobileMenuButton = document.querySelector('button.md\\:hidden');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+</body>
+</html>

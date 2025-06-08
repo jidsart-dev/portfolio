@@ -1,0 +1,16 @@
+[
+  {
+    "name": "cosmoplay",
+    "title": "Cosmoplay - Logo Design",
+    "tags": ["blue", "cosmoplay", "logo", "3D", "casino", "creatives"],
+    "image": "assets/images/portfolio/Beauty-&-Health/1.jpg",
+    "category": ["#casino"]
+  },
+  {
+    "name": "mangonada",
+    "title": "Mangonada",
+    "tags": ["poster", "photoshop", "food"],
+    "image": "./assets/images/portfolio/Food-&-Beverage/11x17%20Vertical%20Poster%20-%20Mangonada.png",
+    "category": ["#Design", "#Poster"]
+  }
+]
