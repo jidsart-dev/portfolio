@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Alberto - Blogs</title>
+  <meta name="title" content="Alberto - Blogs">
+  <meta name="description" content="This is my Portfolio & Blog Website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <div id="header-placeholder"></div>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #TITLE
+      -->
+
+      <section class="section2 feature" aria-label="feature" id="featured">
+
+
+      </section>
+      
+      <div class="container">
+
+          <h2 class="headline headline-2 section-title text-center">
+            <span class="span">My Porfolio</span>
+          </h2>
+
+          <p class="section-text">
+            A curated collection of designs crafted to solve real problems, spark connection, and elevate brands. Each project reflects my passion for clean, creative, and purposeful design.
+          </p>
+          
+      </div>
+        
+        
+      <!-- #CATEGORIES -->
+      <section class="tags" aria-labelledby="tag-label">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <button class="card tag-btn active" data-filter="all">
+                <img src="./assets/images/tag1.png" width="32" height="32" loading="lazy" alt="All">
+                All
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn"  data-filter="logo">
+                <img src="./assets/images/tag2.png" width="32" height="32" loading="lazy" alt="logo design">
+
+                Logo
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" data-filter="branding">
+                <img src="./assets/images/tag3.png" width="32" height="32" loading="lazy" alt="branding">
+
+                Branding
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" data-filter="creatives">
+                <img src="./assets/images/tag4.png" width="32" height="32" loading="lazy" alt="creatives">
+
+                Creatives
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" data-filter="ui/ux">
+                <img src="./assets/images/tag5.png" width="32" height="32" loading="lazy" alt="UI/UX">
+
+                  UI/UX
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" data-filter="mobile">
+                <img src="./assets/images/tag6.png" width="32" height="32" loading="lazy" alt="Space">
+
+                  Mobile
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" data-filter="website">
+                <img src="./assets/images/tag7.png" width="32" height="32" loading="lazy" alt="websites">
+
+                Websites
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" data-filter="video">
+                <img src="./assets/images/tag8.png" width="32" height="32" loading="lazy" alt="Video Editing">
+
+                Video
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" data-filter="poster">
+                <img src="./assets/images/tag9.png" width="32" height="32" loading="lazy" alt="Ad Posters / Marketing Collateral">
+
+                Posters
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" data-filter="slides">
+                <img src="./assets/images/tag10.png" width="32" height="32" loading="lazy" alt="Presentation Slides / Pitch Decks">
+
+                Slides
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" data-filter="flyer">
+                <img src="./assets/images/tag11.png" width="32" height="32" loading="lazy" alt="Brochures / Flyers / Catalogs">
+
+                Flyers
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn" data-filter="packaging">
+                <img src="./assets/images/tag12.png" width="32" height="32" loading="lazy" alt="Packaging Design">
+
+                Packaging
+              </button>
+            </li>
+            
+
+
+
+          </ul>
+          
+
+        
+        </div>
+      </section>
+      
+      
+      
+      <section class="section feature p-3" aria-label="feature">
+        <div class="container">
+
+          <div class="search-box mb-4">
+            <ion-icon class="search-icon mr-1 p-1" name="search" aria-hidden="true"></ion-icon>
+            <input type="text" placeholder="Search">
+          </div>
+          
+          <ul class="portfolio-list">
+           
+            <p class="no-results" style="display: none; text-align: center; margin-top: 1rem;">
+              No matching results found.
+            </p>
+            
+            <li class="image-box" data-name="cosmoplay" data-tags="blue cosmoplay logo 3D casino creatives">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Casino/cosmoplay-logo-3d.png" width="1602" height="903" loading="lazy"
+                    alt="cosmoplay logo" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#casino</a>
+
+                      <a href="#" class="span hover-2"></a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Cosmoplay - Logo Design
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="image-box" data-name="mangonada" data-tags="poster photoshop food">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Food-&-Beverage/11x17%20Vertical%20Poster%20-%20Mangonada.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Poster</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Mangonada
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="image-box" data-name="Urban Care - Logo" data-tags="logo photoshop illustrator urban care massage spa branding company identity">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Logos/urban-care-logo.png" width="1602" height="903" loading="lazy"
+                    alt="panalo prime" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Branding</a>
+
+                      <a href="#" class="span hover-2">#Logo</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Urban Care - Logo
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>                   
+            
+            <li class="image-box" data-name="mangonada" data-tags="mobile delivery app ui/ux">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Delivery-&-Vehicle/habal.PNG" width="1602" height="903" loading="lazy"
+                    alt="habal app services" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Mobile</a>
+
+                      <a href="#" class="span hover-2">#App</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Habal App Services
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="image-box" data-name="dante leon" data-tags="poster photoshop social media">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Flyers/Dante%20Leon%20Seminar%20-%20Flyer%20-%208x11.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Posters</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Poster Design
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="image-box" data-name="OMG - Logo" data-tags="logo photoshop illustrator omg branding company identity">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Logos/omg-logo.png" width="1602" height="903" loading="lazy"
+                    alt="panalo prime" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Branding</a>
+
+                      <a href="#" class="span hover-2">#Logo</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      OMG - Logo
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>            
+            
+            <li class="image-box" data-name="panalo prime" data-tags="logo photoshop illustrator casino branding">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Casino/panaloprime-logo.png" width="1602" height="903" loading="lazy"
+                    alt="panalo prime" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Branding</a>
+
+                      <a href="#" class="span hover-2">#Logo</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Panalo Prime
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="image-box" data-name="barley" data-tags="red logo branding casino betting">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Casino/royalebet-logo.png" width="1602" height="903" loading="lazy"
+                    alt="Casino/royalebet-logo" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Logo #Casino</a>
+
+                      <a href="#" class="span hover-2"></a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      RoyalBet - Logo
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="image-box" data-name="ERPlus - logo" data-tags="poster photoshop social media ERPlus logo logo MLM">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Logos/erplus-logo2.png" width="1602" height="903" loading="lazy"
+                    alt="nebula play logo" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Logo</a>
+
+                      <a href="#" class="span hover-2">#Design</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      ERPlus - logo
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>            
+     
+            <li class="image-box" data-name="nebulaplay" data-tags="poster photoshop social media nebula play casino logo">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Casino/nebulaplay-logo.png" width="1602" height="903" loading="lazy"
+                    alt="nebula play logo" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Logo</a>
+
+                      <a href="#" class="span hover-2">#Design</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      NebulaPlay - logo
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="image-box" data-name="jetop treatment" data-tags="social media ads health beauty">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Beauty-&-Health/Graphics%20189%20-%20Jetop%20Treatment%20design%202.png" width="1602" height="903" loading="lazy"
+                    alt="Jetop Treatment - Social Media Ads" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#SocialMedia</a>
+
+                      <a href="#" class="span hover-2">#ads</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Jetop Treatment - Social Media Ads
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="image-box" data-name="podcast" data-tags="poster design photoshop podcast">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Social-Media-Graphics/tony-podcast.png" width="1602" height="903" loading="lazy"
+                    alt="Podcast - Poster Design" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Poster</a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Podcast - Poster Design
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="image-box" data-name="danteleon" data-tags="business card design">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Business-Cards/Jorge%20Montoya%20-%20Business%20card%20-%20Mockup.png" width="1602" height="903" loading="lazy"
+                    alt="Business Card Design" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#BusinessCards</a>
+
+                      <a href="#" class="span hover-2"></a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Business Card Design
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="image-box" data-name="casino poster" data-tags="red 1080x1080 poster ezwin photoshop casino">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Casino/ezwin/EZWIN%20-%20TEAM%20JMAT.png" width="1602" height="903" loading="lazy"
+                    alt="Casino Poster" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#casino</a>
+
+                      <a href="#" class="span hover-2"></a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Casino Poster
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+     
+            <li class="image-box" data-name="landing page" data-tags="green landing page design website design plant desktop ui/ux ui ux">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Website-Designs/website-design-01.jpg" width="1602" height="903" loading="lazy"
+                    alt="Website Design" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#LandingPage</a>
+
+                      <a href="#" class="span hover-2"></a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Website Design
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+             <li class="image-box" data-name="nebulaplay" data-tags="green zoda soda drinks poster food coke">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Food-&-Beverage/zoda%20-%20%204.5x4.5.png" width="1602" height="903" loading="lazy"
+                    alt="Food Poster" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#LandingPage</a>
+
+                      <a href="#" class="span hover-2"></a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Food Poster
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+            <li class="image-box" data-name="Marketing Creatives" data-tags="black friday sale poster massage marketing health">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Social-Media-Graphics/graphic%201%20variation%204%20-%201080x1080.png" width="1602" height="903" loading="lazy"
+                    alt="Marketing Creatives" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#marketing</a>
+
+                      <a href="#" class="span hover-2"></a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Marketing Creatives
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+             <li class="image-box" data-name="barley" data-tags="green barley omg poster banner organic marketing packaging flyer food">
+              <div class="card feature-card p-2 border-radius-16">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 1602;" data-tilt>
+                  <img src="./assets/images/portfolio/Beauty-&-Health/Barley-Poster2.png" width="1602" height="903" loading="lazy"
+                    alt="OMG - Barley" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Poster</a>
+
+                      <a href="#" class="span hover-2"></a>
+                    </div>
+
+
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      OMG - Barley
+                    </a>
+                  </h3>
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+            
+                        
+                                    
+                                                            
+          </ul>
+
+
+
+        </div>
+
+        <img src="./assets/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
+
+      </section>
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+<div id="footer-placeholder"></div>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  
+      <!-- 
+    - header
+  -->
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/tilteffect.js" defer></script>
+
+
+
+</body>
+
+</html>
