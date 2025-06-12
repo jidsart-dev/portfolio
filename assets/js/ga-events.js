@@ -23,13 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Navbar Contact Button
-  const navcontactButton = document.getElementById('contact-button-nav');
-  if (navcontactButton) {
-    navcontactButton.addEventListener('click', function () {
-      gtag('event', 'contact_click_nav', {
+  // Event delegation for contact-button-nav (works even if loaded later)
+  document.addEventListener('click', function (e) {
+    const navcontactButton = e.target.closest('#contact-button-nav');
+    if (navcontactButton) {
+      gtag('event', 'contact_click', {
         event_category: 'Button',
         event_label: 'Contact Me (Navbar)'
       });
-    });
-  }
+    }
+  });
 });
