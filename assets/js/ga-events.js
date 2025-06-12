@@ -12,3 +12,26 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
+// About Me Contact Button
+const aboutcontactButton = document.getElementById('contact-button-about');
+if (aboutcontactButton) {
+  aboutcontactButton.addEventListener('click', function() {
+    gtag('event', 'contact_click', {
+      'event_category': 'Button',
+      'event_label': 'Contact Me'
+    });
+  });
+}
+
+// Nav Contact Button
+const navcontactButton = document.getElementById('contact-button-nav');
+if (navcontactButton) {
+  navcontactButton.addEventListener('click', function() {
+    gtag('event', 'contact_click', {
+      'event_category': 'Button',
+      'event_label': 'Contact Me'
+    });
+  });
+}
+
