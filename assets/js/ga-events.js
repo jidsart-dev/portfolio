@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const aboutContactButton = document.getElementById("contact-button-about");
     if (aboutContactButton) {
       aboutContactButton.addEventListener("click", function () {
-        gtag('event', 'contact_click', {
+        gtag('event', 'contact_click_about', {
           event_category: 'Button',
           event_label: 'Contact Me (About)'
         });
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const navContactButton = document.getElementById("contact-button-nav");
     if (navContactButton) {
       navContactButton.addEventListener("click", function () {
-        gtag('event', 'contact_click', {
+        gtag('event', 'contact_click_nav', {
           event_category: 'Button',
           event_label: 'Contact Me (Navbar)'
         });
